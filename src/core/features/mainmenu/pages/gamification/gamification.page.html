@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="'core.back' | translate"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <h1>Gamification Page</h1>
+    </ion-title>
+    <ion-buttons slot="end">
+      <core-user-menu-button></core-user-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ng-container *ngFor = "let d of data">
+    <h1>level {{ d.level }} </h1>
+    <div class="progress-bar">
+      <div [ngStyle] = "d.styles"></div>
+    </div>
+  </ng-container>
+
+</ion-content>

@@ -1,0 +1,26 @@
+
+<core-navbar-buttons slot="end" prepend>
+  <ion-button *ngIf="searchEnabled" (click)="openSearch()" [attr.aria-label]="'core.courses.searchcourses' | translate">
+      <ion-icon name="fas-search" slot="icon-only" aria-hidden="true"></ion-icon>
+  </ion-button>
+</core-navbar-buttons>
+<ion-fab vertical = "top" horizontal = "start" no-margin>
+  <!-- <ion-fab-button color = "light" (click) = "goBack()"> -->
+    <button class="arrow" (click) = "goBack()">
+      <ion-icon name = "arrow-back-outline" >
+      </ion-icon>
+    </button>
+
+  <!-- </ion-fab-button> -->
+</ion-fab>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gamification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1>this is gamification page </h1>
+
+</ion-content>
